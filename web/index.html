@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Accidents Statistics</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                position:relative;
+                text-align: center;
+                color: orange;
+                padding: 16px;
+                width:300px;
+                
+            }            
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 150px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+    </head>
+    
+    <body background="build.jpg">
+ 
+    
+          <div class="container">
+              <div align="center"></div>
+              <div class="centered"> <h1><b>S    A    R   A</b></h1></div>
+          </div>
+        
+   
+          <link rel="stylesheet" href="w3style.css">
+          <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+          <!-- navigation bar -->
+          
+          <div class="topnav">
+          <a href="#HOME" class="w3-button w3-bar-item">HOME</a>
+          <a href="#SERVICES" class="w3-button w3-bar-item">SERVICES</a>
+          <a href="#ABOUT" class="w3-button w3-bar-item">ABOUT</a>
+          <a href="#CONTACT" class="w3-button w3-bar-item">CONTACT</a>
+          </div>
+
+          
+          
+         
+
+<!-- Slideshow container -->
+<nav class="w3-bar w3-center w3-black w3-padding-64 navbar-inversion" style="center" >
+<div class="w3-content w3-section" style="max-width:900px">
+  <img class="mySlides w3-animate-fading" src="first.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="second.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="thirdne.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="slider2.jpg" style="width:100%">
+  </div>
+  </nav>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+
+          
+          <!-- services description --> 
+          
+          
+          <nav class="w3-bar ">
+          <section class="w3-container w3-content" style="max-width:1800px">
+          <div class="w3-row-padding w3-center w3-padding-32" id="SERVICES">
+          <div id='SERVICES'></div>
+          <font color="white">
+          <h2 class="w3-wide W3-center">SERVICES</h2></font>
+          
+         <!-- <div class="w3-padding-32 w3-center w3-black">
+          <a href="http://localhost:8080/WebApplication2/index.html">public user</a>
+          </div>
+                            
+          <div align="left"> <div class="w3-padding-32  w3-circle w3-black align-left">
+                  <a href="#">HOSPITAL</a>
+              </div></div>
+            -->
+            
+         <div align="left">
+         <div class="w3-third w3-center w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">PUBLIC USER</p>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+             <a href="login.html">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+         </div>
+          
+            <div align="right"> 
+          <div class="w3-third  w3-center w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">MANUFACTURER </p>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+             <a href="#">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+            </div>
+            
+           
+          <div class="w3-third w3-center w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">HOSPITAL </p>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+             <a href="hosp.html">LOGIN</a>
+        </li>
+      </ul>
+                </div> </div>
+            
+          <!-- about --> 
+          <nav class="w3-bar">
+          <section class="w3-container w3-center w3-white w3-content" style="max-width:600px">
+          <div id='ABOUT'></div>
+          <h2 class="w3-wide W3-center">ABOUT</h2>
+          <p class="w3-justify">The number of fatalities due to road accidents in India has been consistently above one lakh every year. Although the fatality index and rates are declining the actual figure is still at an alarming stage. In order to help in reducing the number of road accidents and fatalities, the availability of reliable and comprehensive road accident database and analysis system is critical to understand the pattern of accident causation.</p>
+          </section></nav>
+          
+         
+        <!-- contact -->
+        <footer class="w3-container w3-padding-64 w3-center w3-black w3-xxlarge">
+  <a href="https://www.facebook.com/roadsafetyagra"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://in.pinterest.com/search/pins/?q=road%20accidents&rs=rs&eq=&etslf=4293&term_meta[]=road%7Crecentsearch%7C0&term_meta[]=accidents%7Crecentsearch%7C0"><i class="fa fa-pinterest-p"></i></a>
+  <a href="https://twitter.com/RoadSafetyUk"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  
+  <p class="w3-medium">
+   </p>
+</footer>
+          </body>
+          </html>
+         
+          
+          
